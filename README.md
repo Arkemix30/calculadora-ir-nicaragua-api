@@ -32,7 +32,7 @@ It should create a `.venv` folder, generating a virtual enviroment with all proj
 
 * Clone the repository
 ```bash
-$ git clone https://github.com/Arkemix30/spot-test.git
+$ git clone https://github.com/Arkemix30/calculadora-ir-nicaragua-api.git
 ```
 
 * To run the project, you need to activate the virtual environment.
@@ -41,27 +41,10 @@ For that, you can run this command:
 $ poetry shell
 ```
 
-* You have to migrate the model's schema into database, run the next commands:
-```bash
-$ python manage.py makemigrations && python manage.py migrate
-```
-(if you have problems, run the commands separately)
-
-* Then, you should run the following command to insert the dummy data.
-```bash
-$ python manage.py loaddata genres_data.json
-$ python manage.py loaddata tracks_data.json
-```
 * And finally, to run the server:
 ```bash
-$ python manage.py runserver
+$ python main.py
 ```
-
-## Built with 🛠️
-
-* [Django](https://www.djangoproject.com/) - The framework used
-* [Django Rest Framework](https://www.django-rest-framework.org/) - The framework used for RESTful API
-
 
 ## Authors ✒️
 
